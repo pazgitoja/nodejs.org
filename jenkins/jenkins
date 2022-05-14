@@ -1,7 +1,9 @@
 pipeline {
-
+    agent any
+    tools{
+        nodejs "18.1.0"
+    }
     stages {
-
         stage("build") {
             steps {
                 echo "building.." 
@@ -28,6 +30,7 @@ pipeline {
             }
         }
         stage('publish') {
+	
             steps {
                echo "publishing.."
                
