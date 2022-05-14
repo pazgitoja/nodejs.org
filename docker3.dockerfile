@@ -1,3 +1,3 @@
 FROM nginx:stable-alpine
-WORKDIR /volumes/
+WORKDIR /workspace/volumes/
 COPY /build/en /usr/share/nginx/html
