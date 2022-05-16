@@ -4,10 +4,6 @@ pipeline {
         nodejs "18.1.0"
     }
     stages {
-        stage("npm-login-cli"){
-        steps{
-        sh 'npm -v'
-        }
         }
         stage("build") {
             steps {
