@@ -4,7 +4,6 @@ pipeline {
         nodejs "18.1.0"
     }
     stages {
-        }
         stage("build") {
             steps {
                 echo "building.." 
